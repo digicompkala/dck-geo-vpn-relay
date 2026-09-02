@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 CONFIG = ROOT / "config" / "protected-networks.txt"
 
-UA = "DCK-Geo-VPN-Relay/1.0 (+https://digicompkala.com/)"
+UA = "DCK-Geo-VPN-Relay/1.1 (+https://digicompkala.com/)"
 TIMEOUT = 45
 MAX_DOWNLOAD = 12 * 1024 * 1024
 
@@ -252,9 +252,29 @@ def main():
     source_meta["tor"] = {"url": URLS["tor"], "bytes": len(tor_raw), "sha256": sha256_bytes(tor_raw)}
     tor = parse_ip_lines(tor_raw)
 
-    proxy_raw = fetch(URLS["proxio"])
-    source_meta["proxio"] = {"url": URLS["proxio"], "bytes": len(proxy_raw), "sha256": sha256_bytes(proxy_raw)}
-    proxies = parse_proxy_lines(proxy_raw)
+    # Public working-proxy data is intentionally observation-only. It changes
+    # quickly and is more prone to false positives than the curated VPN feeds,
+    # so it must never be a warning signal by itself.
+    proxies = []
+    proxy_failure = None
+    try:
+        proxy_raw = fetch(URLS["proxio"])
+        proxies = parse_proxy_lines(proxy_raw)
+        source_meta["proxio"] = {
+            "url": URLS["proxio"],
+            "bytes": len(proxy_raw),
+            "sha256": sha256_bytes(proxy_raw),
+            "networks": len(proxies),
+            "warning_signal": False,
+        }
+    except Exception as exc:
+        proxy_failure = str(exc)
+        source_meta["proxio"] = {
+            "url": URLS["proxio"],
+            "warning_signal": False,
+            "status": "optional_source_failed",
+            "error": proxy_failure,
+        }
 
     google_raw = fetch(URLS["google"])
     source_meta["google_protection"] = {"url": URLS["google"], "bytes": len(google_raw), "sha256": sha256_bytes(google_raw)}
@@ -293,14 +313,15 @@ def main():
         raise RuntimeError(f"X4BNet VPN count too small: {len(x4)}")
     if len(tor) < 100:
         raise RuntimeError(f"Tor exit count too small: {len(tor)}")
-    if len(proxies) < 100:
-        raise RuntimeError(f"proxy count too small: {len(proxies)}")
     if provider_success < 5:
         raise RuntimeError(f"too few VPN provider feeds succeeded: {provider_success}")
     if len(google) < 100:
         raise RuntimeError(f"Google protected range count too small: {len(google)}")
 
-    candidate_raw = collapse(x4 + provider + proxies + tor)
+    # Conservative warning union: curated known-VPN networks, first-party VPN
+    # provider egress/server lists, and Tor exits. Public working proxies are
+    # recorded for observation only and are excluded from the warning union.
+    candidate_raw = collapse(x4 + provider + tor)
     raw_count = len(candidate_raw)
 
     # Iran is always direct-allow. Protected crawler/partner/origin ranges are
@@ -342,7 +363,8 @@ def main():
         "policy": {
             "iran": "allow_direct",
             "non_iran_unmatched": "allow_direct",
-            "non_iran_vpn_proxy_tor": "warning_candidate",
+            "non_iran_known_vpn_or_tor": "warning_candidate",
+            "public_working_proxy_feed": "observe_only_not_warning_signal",
             "warning_is_block": False,
             "visitor_may_continue": True,
             "hosting_provider_alone_is_signal": False,
@@ -356,7 +378,8 @@ def main():
             "provider_feeds_successful": provider_success,
             "provider_feeds_total": len(PROVIDERS),
             "tor_networks_raw": len(tor),
-            "public_proxy_networks": len(proxies),
+            "public_proxy_networks_observed": len(proxies),
+            "public_proxy_feed_successful": proxy_failure is None,
             "candidate_raw_networks": raw_count,
             "candidate_ipv4_networks": len(cand4),
             "candidate_ipv6_networks": len(cand6),
@@ -370,6 +393,7 @@ def main():
         },
         "provider_counts": provider_counts,
         "provider_failures": provider_failures,
+        "optional_source_failures": ([{"source": "proxio", "error": proxy_failure}] if proxy_failure else []),
         "google_relay_generated_at": google_obj.get("generated_at"),
         "sources": source_meta,
         "output_sha256": hashes,
