@@ -1,0 +1,107 @@
+name: Update DCK geo VPN relay
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 * * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+      - 'config/**'
+      - '.github/workflows/update-geo-vpn.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dck-geo-vpn-update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build relay files
+        run: |
+          set -euo pipefail
+          python3 scripts/build_geo_vpn.py
+
+      - name: Validate generated files
+        run: |
+          set -euo pipefail
+
+          test -s dist/iran-v4.txt
+          test -s dist/vpn-proxy-v4.txt
+          test -s dist/tor-v4.txt
+          test -s dist/dck-geo-vpn-report.json
+
+          python3 - <<'PY'
+          import ipaddress
+          import json
+          from pathlib import Path
+
+          files = [
+              ('dist/iran-v4.txt', 4),
+              ('dist/iran-v6.txt', 6),
+              ('dist/vpn-proxy-v4.txt', 4),
+              ('dist/vpn-proxy-v6.txt', 6),
+              ('dist/tor-v4.txt', 4),
+              ('dist/tor-v6.txt', 6),
+          ]
+
+          for path, version in files:
+              p = Path(path)
+              if not p.exists():
+                  raise SystemExit(f'missing {path}')
+              for lineno, raw in enumerate(p.read_text().splitlines(), 1):
+                  if not raw.strip():
+                      continue
+                  net = ipaddress.ip_network(raw.strip(), strict=False)
+                  if net.version != version:
+                      raise SystemExit(f'wrong IP version {path}:{lineno}')
+                  if not net.network_address.is_global:
+                      raise SystemExit(f'non-global network {path}:{lineno}: {net}')
+
+          report = json.loads(Path('dist/dck-geo-vpn-report.json').read_text())
+          counts = report['counts']
+
+          if counts['iran_ipv4_networks'] < 100:
+              raise SystemExit('Iran IPv4 output too small')
+          if counts['candidate_ipv4_networks'] < 1000:
+              raise SystemExit('VPN/proxy IPv4 output too small')
+          if counts['google_protected_networks'] < 100:
+              raise SystemExit('Google protection output unexpectedly small')
+          if counts['provider_feeds_successful'] < 5:
+              raise SystemExit('Too few provider feeds succeeded')
+
+          print('VALIDATION=OK')
+          PY
+
+      - name: Commit changed dist files
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- dist/; then
+            echo 'DIST_CHANGED=NO'
+            exit 0
+          fi
+
+          git config user.name 'dck-geo-vpn-relay-bot'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add dist/
+          git commit -m 'Update geo VPN relay data'
+          git push
+
+          echo 'DIST_CHANGED=YES'
