@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 27912,
+    "candidate_ipv4_networks": 27809,
     "candidate_ipv6_networks": 1579,
-    "candidate_raw_networks": 29642,
+    "candidate_raw_networks": 29539,
     "google_protected_networks": 183,
     "iran_ipv4_networks": 1740,
     "iran_ipv6_networks": 569,
@@ -11,7 +11,7 @@
     "provider_feeds_successful": 10,
     "provider_feeds_total": 10,
     "provider_vpn_networks": 14550,
-    "public_proxy_networks": 11537,
+    "public_proxy_networks": 11434,
     "ripe_ir_resource_records": 2525,
     "static_protected_networks": 11,
     "tor_ipv4_networks": 840,
@@ -20,14 +20,14 @@
     "total_protected_networks": 194,
     "x4bnet_networks": 10814
   },
-  "generated_at": "2026-09-02T17:07:07.084696Z",
+  "generated_at": "2026-09-02T17:36:25.964791Z",
   "google_relay_generated_at": "2026-09-02T08:16:20Z",
   "output_sha256": {
     "iran-v4.txt": "0b39dc1a73e2f5e92266f441e70210972e7cf51a0c0266886e7d7cd1b60876bf",
     "iran-v6.txt": "5b0443253500f4931a75f491ceef1d89abefd2c0204366bf290de490de61b69c",
     "tor-v4.txt": "0569147b5effc30c21a17189079b58980dd7b624cccb24fdf8aa2f8d27515e1b",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "132b65e68b264f8713c74bf6e51ae256b6d837f7977af943b5986da9fb9e9346",
+    "vpn-proxy-v4.txt": "9d6fb0c5a9598121b70b8e60ffacf3c16fea0c3daac5a629de8d33aab1e14a09",
     "vpn-proxy-v6.txt": "73790d9b7f0d4468048faa5998ccde67e7c474126b20133d7ff482750d3978e3"
   },
   "policy": {
@@ -118,8 +118,8 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/windscribe.txt"
     },
     "proxio": {
-      "bytes": 395151,
-      "sha256": "f1a64fc28a8ec356b2b3c19e8086377f0d89f77b52f364189c71f1412a655579",
+      "bytes": 395991,
+      "sha256": "95163662c517bf735d71388fcf0de24c85d8047a94d7fd34a0dec3f14f39757a",
       "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt"
     },
     "ripe": {
