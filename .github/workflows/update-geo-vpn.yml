@@ -79,7 +79,7 @@ jobs:
           if counts['iran_ipv4_networks'] < 100:
               raise SystemExit('Iran IPv4 output too small')
           if counts['candidate_ipv4_networks'] < 1000:
-              raise SystemExit('VPN/proxy IPv4 output too small')
+              raise SystemExit('VPN IPv4 output too small')
           if counts['google_protected_networks'] < 100:
               raise SystemExit('Google protection output unexpectedly small')
           if counts['provider_feeds_successful'] < 5:
@@ -104,6 +104,13 @@ jobs:
           fi
 
           git commit -m 'Update geo VPN relay data'
-          git push
+
+          # The branch may advance while a relatively long upstream build is
+          # running. Rebase the generated-data commit onto the latest main
+          # before pushing so a harmless concurrent README/config change does
+          # not cause a non-fast-forward failure.
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
 
           echo 'DIST_CHANGED=YES'
