@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16411,
+    "candidate_ipv4_networks": 16427,
     "candidate_ipv6_networks": 1573,
-    "candidate_raw_networks": 17992,
+    "candidate_raw_networks": 18008,
     "google_protected_networks": 183,
     "iran_ipv4_networks": 1740,
     "iran_ipv6_networks": 570,
@@ -10,9 +10,9 @@
     "protected_subtraction_net_change": 0,
     "provider_feeds_successful": 10,
     "provider_feeds_total": 10,
-    "provider_vpn_networks": 14370,
+    "provider_vpn_networks": 14313,
     "public_proxy_feed_successful": true,
-    "public_proxy_networks_observed": 12160,
+    "public_proxy_networks_observed": 10768,
     "ripe_ir_resource_records": 2526,
     "static_protected_networks": 11,
     "tor_ipv4_networks": 764,
@@ -21,7 +21,7 @@
     "total_protected_networks": 194,
     "x4bnet_networks": 10864
   },
-  "generated_at": "2026-09-10T10:39:10.176078Z",
+  "generated_at": "2026-09-10T11:38:17.124678Z",
   "google_relay_generated_at": "2026-09-09T18:30:57Z",
   "optional_source_failures": [],
   "output_sha256": {
@@ -29,7 +29,7 @@
     "iran-v6.txt": "49113dc4c41020f71735a04b924563a9ea997760880d0a37dec7c326e232f497",
     "tor-v4.txt": "91aaf3e8a158fc5c86070db514b1dfefb8f9ff76a367a60a31886b4c3bb93cb5",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "cd16acde6ee125d6a5fe17c8c31a3829d4ad12ce0a3377fc6b26ae430f996e59",
+    "vpn-proxy-v4.txt": "a66ed22e79ba513dc14050349495cf729dc20dd25de90477a58699b4b81823c3",
     "vpn-proxy-v6.txt": "5b849482ed55ca11fe585326d29a968639af0a3df626888590a52f3a1fc8f594"
   },
   "policy": {
@@ -45,12 +45,12 @@
     "airvpn": 1725,
     "ivpn": 248,
     "mullvad": 1098,
-    "nordvpn": 7864,
+    "nordvpn": 7857,
     "ovpn": 47,
-    "pia": 1333,
+    "pia": 1278,
     "protonvpn": 1041,
     "riseupvpn": 20,
-    "surfshark": 276,
+    "surfshark": 281,
     "windscribe": 718
   },
   "provider_failures": [],
@@ -79,9 +79,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/mullvad.txt"
     },
     "provider_nordvpn": {
-      "bytes": 114412,
-      "networks": 7864,
-      "sha256": "a34d110a0e171459c13d814bce5b1d89071d95c68892fd1b7646dbff7aedbafc",
+      "bytes": 114307,
+      "networks": 7857,
+      "sha256": "85c6fad8fb557a92cf901e63a3de8e8bcec87826974b03de22a7dd2920c57be9",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/nordvpn.txt"
     },
     "provider_ovpn": {
@@ -91,9 +91,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/ovpn.txt"
     },
     "provider_pia": {
-      "bytes": 20091,
-      "networks": 1333,
-      "sha256": "d986775eef6fb2497aba6ad00706ee2d08a4dc6a78960d690f86ee351b9f3621",
+      "bytes": 19162,
+      "networks": 1278,
+      "sha256": "45c2d4b4d2c53ccbcea510ba99a5a6fe2fc0d4c999f779036eca25d82dc49c23",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/pia.txt"
     },
     "provider_protonvpn": {
@@ -109,9 +109,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/riseupvpn.txt"
     },
     "provider_surfshark": {
-      "bytes": 3879,
-      "networks": 276,
-      "sha256": "de0e36be33150c1c620aea79a10f5aab0a906fe2f68e79f47317ee3db53f1c8b",
+      "bytes": 3972,
+      "networks": 281,
+      "sha256": "90f6ee4fb4b8e790463b5c40e8903ce56ae3a2c606ecb3df843a51346abe9426",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/surfshark.txt"
     },
     "provider_windscribe": {
@@ -121,9 +121,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/windscribe.txt"
     },
     "proxio": {
-      "bytes": 393179,
-      "networks": 12160,
-      "sha256": "3e09fc3d8f2eecb865f7ac2becb013fb6d4a498a03d7d66509e7cd1d97878bfb",
+      "bytes": 395676,
+      "networks": 10768,
+      "sha256": "e04f5c745622e784f88a342a6adbe23368e7fd705de48c9e9711c1f290a6031a",
       "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
       "warning_signal": false
     },
