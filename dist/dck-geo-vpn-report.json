@@ -12,7 +12,7 @@
     "provider_feeds_total": 10,
     "provider_vpn_networks": 14313,
     "public_proxy_feed_successful": true,
-    "public_proxy_networks_observed": 10735,
+    "public_proxy_networks_observed": 10812,
     "ripe_ir_resource_records": 2526,
     "static_protected_networks": 11,
     "tor_ipv4_networks": 762,
@@ -21,7 +21,7 @@
     "total_protected_networks": 194,
     "x4bnet_networks": 10869
   },
-  "generated_at": "2026-09-11T02:38:01.050458Z",
+  "generated_at": "2026-09-11T03:38:09.234479Z",
   "google_relay_generated_at": "2026-09-10T18:28:59Z",
   "optional_source_failures": [],
   "output_sha256": {
@@ -121,9 +121,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/windscribe.txt"
     },
     "proxio": {
-      "bytes": 395630,
-      "networks": 10735,
-      "sha256": "c853703cda5d3bd3402e2bf335135179d5d551c418ab76bfb62714cd94d49df5",
+      "bytes": 395744,
+      "networks": 10812,
+      "sha256": "6db87f28c615e3fa01f8c12ea18230aa542b24c8db30f5c9afc10e15d0260589",
       "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
       "warning_signal": false
     },
@@ -134,7 +134,7 @@
     },
     "tor": {
       "bytes": 18971,
-      "sha256": "c7483cdff12ddc01eb844549d480ba77211123a5eb340cdc49df2034ea709eaa",
+      "sha256": "01f76e5202e424828a458376597ea22d0e43c6d3c866439e871f4cf1e521e55c",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
