@@ -21,8 +21,8 @@
     "total_protected_networks": 194,
     "x4bnet_networks": 10876
   },
-  "generated_at": "2026-09-11T17:35:54.756624Z",
-  "google_relay_generated_at": "2026-09-10T18:28:59Z",
+  "generated_at": "2026-09-11T18:39:30.398018Z",
+  "google_relay_generated_at": "2026-09-11T18:29:51Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "0b39dc1a73e2f5e92266f441e70210972e7cf51a0c0266886e7d7cd1b60876bf",
@@ -57,7 +57,7 @@
   "sources": {
     "google_protection": {
       "bytes": 138044,
-      "sha256": "d636728d69ff0dfb0d295fb7587c263fe1aceba6ac0bd42a7d611084b586f613",
+      "sha256": "4aaecf5977bc578de91eb9c8cd895c95bf4819a160f6a6ad9c6f8a9ce5b48d67",
       "url": "https://raw.githubusercontent.com/digicompkala/dck-google-ipranges-relay/main/dist/google-ipranges.json"
     },
     "provider_airvpn": {
