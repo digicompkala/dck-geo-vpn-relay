@@ -12,7 +12,7 @@
     "provider_feeds_total": 10,
     "provider_vpn_networks": 14183,
     "public_proxy_feed_successful": true,
-    "public_proxy_networks_observed": 8610,
+    "public_proxy_networks_observed": 8971,
     "ripe_ir_resource_records": 2528,
     "static_protected_networks": 11,
     "tor_ipv4_networks": 754,
@@ -21,7 +21,7 @@
     "total_protected_networks": 194,
     "x4bnet_networks": 10857
   },
-  "generated_at": "2026-09-12T20:39:32.975763Z",
+  "generated_at": "2026-09-12T21:35:26.571328Z",
   "google_relay_generated_at": "2026-09-11T18:29:51Z",
   "optional_source_failures": [],
   "output_sha256": {
@@ -121,9 +121,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/windscribe.txt"
     },
     "proxio": {
-      "bytes": 390977,
-      "networks": 8610,
-      "sha256": "585db87a22be9348856bb2bd27e56d907ab13ab8db0130a91215c29a741062e9",
+      "bytes": 392039,
+      "networks": 8971,
+      "sha256": "f065168dba6f723c6c554eb6cee8127ae526a2fdd1128c99665714c960a17d70",
       "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
       "warning_signal": false
     },
