@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16312,
+    "candidate_ipv4_networks": 16315,
     "candidate_ipv6_networks": 1573,
-    "candidate_raw_networks": 17893,
+    "candidate_raw_networks": 17896,
     "google_protected_networks": 183,
     "iran_ipv4_networks": 1742,
     "iran_ipv6_networks": 570,
@@ -19,9 +19,9 @@
     "tor_ipv6_networks": 0,
     "tor_networks_raw": 758,
     "total_protected_networks": 194,
-    "x4bnet_networks": 10857
+    "x4bnet_networks": 10860
   },
-  "generated_at": "2026-09-13T05:36:01.264181Z",
+  "generated_at": "2026-09-13T06:42:24.876734Z",
   "google_relay_generated_at": "2026-09-11T18:29:51Z",
   "optional_source_failures": [],
   "output_sha256": {
@@ -29,7 +29,7 @@
     "iran-v6.txt": "49113dc4c41020f71735a04b924563a9ea997760880d0a37dec7c326e232f497",
     "tor-v4.txt": "ce0cf4b6decc105eb2c253ab0bd098f405bb5d868fe2ddbddca6640336f0f8d0",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "4d5ff666e3cff5acc07e5eb3b725417fbf99a49bd3abe1209185ba23900c69ce",
+    "vpn-proxy-v4.txt": "631a9151e328e81701c2dc0f3632d6f7a03f87587e4a7a663b5e14d9a41a01ae",
     "vpn-proxy-v6.txt": "5b849482ed55ca11fe585326d29a968639af0a3df626888590a52f3a1fc8f594"
   },
   "policy": {
@@ -138,8 +138,8 @@
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
-      "bytes": 178139,
-      "sha256": "6ee9d3cd2c670014f7b20a552166253a297913cfe24d4f5741b8d9c5c21a7823",
+      "bytes": 178181,
+      "sha256": "08f750a617aefdc9f60a8300e3392a95165e29832c7366067ef64ae53c61c922",
       "url": "https://raw.githubusercontent.com/X4BNet/lists_vpn/main/output/vpn/ipv4.txt"
     }
   }
