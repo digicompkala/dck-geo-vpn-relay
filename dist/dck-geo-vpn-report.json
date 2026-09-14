@@ -12,7 +12,7 @@
     "provider_feeds_total": 10,
     "provider_vpn_networks": 14403,
     "public_proxy_feed_successful": true,
-    "public_proxy_networks_observed": 8544,
+    "public_proxy_networks_observed": 8529,
     "ripe_ir_resource_records": 2528,
     "static_protected_networks": 11,
     "tor_ipv4_networks": 773,
@@ -21,8 +21,8 @@
     "total_protected_networks": 194,
     "x4bnet_networks": 10841
   },
-  "generated_at": "2026-09-14T17:37:48.445526Z",
-  "google_relay_generated_at": "2026-09-11T18:29:51Z",
+  "generated_at": "2026-09-14T18:42:04.446689Z",
+  "google_relay_generated_at": "2026-09-14T18:31:01Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "55b5e2fe0564026f6396842ab0c7066a702edd3dd20508ea08f5282304c6d975",
@@ -57,7 +57,7 @@
   "sources": {
     "google_protection": {
       "bytes": 138044,
-      "sha256": "4aaecf5977bc578de91eb9c8cd895c95bf4819a160f6a6ad9c6f8a9ce5b48d67",
+      "sha256": "9f83e6f684bae03e19853f6d3a496a11d93ef01484d12119d0bff660bb597b4d",
       "url": "https://raw.githubusercontent.com/digicompkala/dck-google-ipranges-relay/main/dist/google-ipranges.json"
     },
     "provider_airvpn": {
@@ -121,9 +121,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/windscribe.txt"
     },
     "proxio": {
-      "bytes": 390345,
-      "networks": 8544,
-      "sha256": "c061fc0d08be4da728de833b9638918504a8a1e49caf5872355c8c2575073ec1",
+      "bytes": 390407,
+      "networks": 8529,
+      "sha256": "07779d17830623b25d5661e303eb46f3f9b134239efb68b942b2108d9298428a",
       "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
       "warning_signal": false
     },
