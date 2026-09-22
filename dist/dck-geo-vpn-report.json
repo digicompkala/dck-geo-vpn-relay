@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16358,
+    "candidate_ipv4_networks": 16413,
     "candidate_ipv6_networks": 1573,
-    "candidate_raw_networks": 17938,
+    "candidate_raw_networks": 17993,
     "google_protected_networks": 183,
     "iran_ipv4_networks": 1742,
     "iran_ipv6_networks": 571,
@@ -10,7 +10,7 @@
     "protected_subtraction_net_change": 0,
     "provider_feeds_successful": 10,
     "provider_feeds_total": 10,
-    "provider_vpn_networks": 13965,
+    "provider_vpn_networks": 13990,
     "public_proxy_feed_successful": true,
     "public_proxy_networks_observed": 8178,
     "ripe_ir_resource_records": 2530,
@@ -21,7 +21,7 @@
     "total_protected_networks": 194,
     "x4bnet_networks": 10927
   },
-  "generated_at": "2026-09-22T10:38:31.256235Z",
+  "generated_at": "2026-09-22T11:37:49.943768Z",
   "google_relay_generated_at": "2026-09-21T18:29:39Z",
   "optional_source_failures": [],
   "output_sha256": {
@@ -29,7 +29,7 @@
     "iran-v6.txt": "9bb64839410795954827bfedc252affbd706b8b2f3d3c1ce8771f51c4228e751",
     "tor-v4.txt": "0b9c2be850c2747ee78fd46ab3e0aa3fa3ce113d16c1cf41c8b29e67d0fb9feb",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "08d335f7aa9b3b597f3df6e15f53b5ef91e32a8875a84c7545de702eca0f295f",
+    "vpn-proxy-v4.txt": "70d35534d037606e9a1e064b196effe1fc07ceed7fb63f3f929300e63ecf1fdb",
     "vpn-proxy-v6.txt": "546eaa664a36f6f4e2c9bb6fe49314b48a3fb1a00859febf884a4000fd1b4c91"
   },
   "policy": {
@@ -45,9 +45,9 @@
     "airvpn": 1725,
     "ivpn": 250,
     "mullvad": 1098,
-    "nordvpn": 7693,
+    "nordvpn": 7627,
     "ovpn": 47,
-    "pia": 1085,
+    "pia": 1176,
     "protonvpn": 1041,
     "riseupvpn": 20,
     "surfshark": 277,
@@ -79,9 +79,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/mullvad.txt"
     },
     "provider_nordvpn": {
-      "bytes": 111958,
-      "networks": 7693,
-      "sha256": "08cd25e201e3bdd87a5b964074e7ed673e072505856171885c40fc4dc3b6d2c5",
+      "bytes": 111009,
+      "networks": 7627,
+      "sha256": "a6fe3856d69a45cfe1bb9d4cba1cdcfb0c302b1f08a764d2d6625ee4dd78ea52",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/nordvpn.txt"
     },
     "provider_ovpn": {
@@ -91,9 +91,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/ovpn.txt"
     },
     "provider_pia": {
-      "bytes": 16382,
-      "networks": 1085,
-      "sha256": "1e77035ba6b0da0e74a12a7c3f8bab44d97eb00684f58730de8cc224ba08829b",
+      "bytes": 17683,
+      "networks": 1176,
+      "sha256": "2336ab2fb447c67e41a675d721c4136eb237c5125210141481f0d949739577ae",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/pia.txt"
     },
     "provider_protonvpn": {
@@ -109,9 +109,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/riseupvpn.txt"
     },
     "provider_surfshark": {
-      "bytes": 3907,
+      "bytes": 3896,
       "networks": 277,
-      "sha256": "31de563612485c8cc72b25bf0803fa2b0e207c8cbe1b17bec5e0d0d0f267528c",
+      "sha256": "c03dbe28a1d2aa7acc0016e1dcc4f7136b66d6d26a829faf543e99d79a41ccce",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/surfshark.txt"
     },
     "provider_windscribe": {
