@@ -21,7 +21,7 @@
     "total_protected_networks": 196,
     "x4bnet_networks": 11062
   },
-  "generated_at": "2026-09-28T21:37:34.852556Z",
+  "generated_at": "2026-09-28T22:37:48.857390Z",
   "google_relay_generated_at": "2026-09-28T18:32:31Z",
   "optional_source_failures": [],
   "output_sha256": {
@@ -128,8 +128,8 @@
       "warning_signal": false
     },
     "ripe": {
-      "bytes": 8278833,
-      "sha256": "4e16000d71a00d36d0171847ac7294e74289e04fbada7e4895aef769f58139f9",
+      "bytes": 8280691,
+      "sha256": "894428977d408aed7f711e7cc2344145aed1fcf99afa53a8af7f4bef6d671e64",
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
