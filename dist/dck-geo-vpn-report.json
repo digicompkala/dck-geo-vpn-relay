@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16662,
+    "candidate_ipv4_networks": 16631,
     "candidate_ipv6_networks": 1580,
-    "candidate_raw_networks": 18250,
+    "candidate_raw_networks": 18219,
     "google_protected_networks": 185,
     "iran_ipv4_networks": 1744,
     "iran_ipv6_networks": 571,
@@ -10,7 +10,7 @@
     "protected_subtraction_net_change": 0,
     "provider_feeds_successful": 10,
     "provider_feeds_total": 10,
-    "provider_vpn_networks": 14067,
+    "provider_vpn_networks": 14022,
     "public_proxy_feed_successful": true,
     "public_proxy_networks_observed": 11925,
     "ripe_ir_resource_records": 2535,
@@ -21,15 +21,15 @@
     "total_protected_networks": 196,
     "x4bnet_networks": 11062
   },
-  "generated_at": "2026-09-29T10:40:41.285204Z",
+  "generated_at": "2026-09-29T11:39:05.566020Z",
   "google_relay_generated_at": "2026-09-28T18:32:31Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "c4c6329b6c7dd04535b211673f2ea5eb9a37f10ece38236efdd28d06dc1bfb38",
     "iran-v6.txt": "9bb64839410795954827bfedc252affbd706b8b2f3d3c1ce8771f51c4228e751",
-    "tor-v4.txt": "19aae69570b792ab46b03f702363039b557bb24bbb9864ce4b4bdaa8cc98238b",
+    "tor-v4.txt": "28e5c2cb35fcd3d479658b76b25c21a5872d7827aa6ca512f8ae318a10a6624c",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "36336a7f9ad7cda0c442a8f90ebab3d92819b7405297e4a10fccb8b0219d9c33",
+    "vpn-proxy-v4.txt": "415504d817d4ce1d4f82a41d3912cac1fe3af4e2344f801b0d6181c2405592e3",
     "vpn-proxy-v6.txt": "fb8ea3642423950527562ca906baa9d99ed39181fc937fa7e27f45852e915568"
   },
   "policy": {
@@ -45,12 +45,12 @@
     "airvpn": 1732,
     "ivpn": 250,
     "mullvad": 1103,
-    "nordvpn": 7357,
+    "nordvpn": 7278,
     "ovpn": 47,
-    "pia": 1497,
+    "pia": 1532,
     "protonvpn": 1060,
     "riseupvpn": 20,
-    "surfshark": 280,
+    "surfshark": 279,
     "windscribe": 721
   },
   "provider_failures": [],
@@ -79,9 +79,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/mullvad.txt"
     },
     "provider_nordvpn": {
-      "bytes": 107197,
-      "networks": 7357,
-      "sha256": "bff11554f39bde4f1836013083ad1440a103153737af34a0b20ce261f82ccd6d",
+      "bytes": 105985,
+      "networks": 7278,
+      "sha256": "def848ab3207e3ff1c61666882a1ef21dc5534d21a5ecfc331c41d4dbf43eb1e",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/nordvpn.txt"
     },
     "provider_ovpn": {
@@ -91,9 +91,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/ovpn.txt"
     },
     "provider_pia": {
-      "bytes": 22767,
-      "networks": 1497,
-      "sha256": "da93b70621e310c2d058ebbe94b143ee7ed418a0757d094cbec0056adf82f336",
+      "bytes": 23102,
+      "networks": 1532,
+      "sha256": "67db8df236b1673abebcc3b7daec2dbb5648b039d9e65bee74ac1f1291b2d1e6",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/pia.txt"
     },
     "provider_protonvpn": {
@@ -109,9 +109,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/riseupvpn.txt"
     },
     "provider_surfshark": {
-      "bytes": 3948,
-      "networks": 280,
-      "sha256": "b8a885095cc0eb444260c5e0f58c25e9771116e211cf9618da8e861c9fbd01f6",
+      "bytes": 3937,
+      "networks": 279,
+      "sha256": "8b8f1ecfe79785f730f40a39d6523eda89e20f3b97b3fa578bdebb44e6c629f9",
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/surfshark.txt"
     },
     "provider_windscribe": {
@@ -133,8 +133,8 @@
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 19743,
-      "sha256": "f430e5e70b3b551860617b23fa69d435bba990f820159960c4d892dd6fc3a205",
+      "bytes": 19716,
+      "sha256": "6002673ca380cef0eb8a907731c8514fda307ac76fe77aed0f6aa21b517d931f",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
