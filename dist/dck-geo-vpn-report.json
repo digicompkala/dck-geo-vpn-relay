@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16657,
+    "candidate_ipv4_networks": 16646,
     "candidate_ipv6_networks": 1544,
-    "candidate_raw_networks": 18209,
+    "candidate_raw_networks": 18198,
     "google_protected_networks": 185,
     "iran_ipv4_networks": 1745,
     "iran_ipv6_networks": 571,
@@ -15,21 +15,21 @@
     "public_proxy_networks_observed": 11885,
     "ripe_ir_resource_records": 2539,
     "static_protected_networks": 11,
-    "tor_ipv4_networks": 833,
+    "tor_ipv4_networks": 825,
     "tor_ipv6_networks": 0,
-    "tor_networks_raw": 834,
+    "tor_networks_raw": 826,
     "total_protected_networks": 196,
-    "x4bnet_networks": 11104
+    "x4bnet_networks": 11098
   },
-  "generated_at": "2026-09-30T14:42:16.100016Z",
+  "generated_at": "2026-09-30T15:42:56.067386Z",
   "google_relay_generated_at": "2026-09-29T18:33:24Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "e6482649e63a6c672cd9ab9631875d222a4f0dca7723997ab29d55f910360373",
     "iran-v6.txt": "9bb64839410795954827bfedc252affbd706b8b2f3d3c1ce8771f51c4228e751",
-    "tor-v4.txt": "3514a1902340a01ff9c256b68d27146dd212be20cfbec63a104fa292eff2d78b",
+    "tor-v4.txt": "717a8ab91ae13a72cf4e28aa2d831a01fd53583a19f723079863bc954594d4da",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "ca1d470b996baec9090f9a02d9182a7460b8860bc50bb22aa983e8c35ead6c04",
+    "vpn-proxy-v4.txt": "6d0c98324b1eb7706e308b488d7d78a162c9ce99ae16b549e69adf7a79319bb6",
     "vpn-proxy-v6.txt": "88d5bd208a9b669748780bf5b3c7cb234e36495ab5d512940355c44184eb0bd9"
   },
   "policy": {
@@ -133,13 +133,13 @@
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 19974,
-      "sha256": "4a79d9ff8c8ae06a5bb048fc7ec9346b16cfa725bed94e47f1fb89c54336edb9",
+      "bytes": 19861,
+      "sha256": "1f210ccab8815b4142f16fbbd214ed03f68b2d4f4b96ef50a2c59c13c9fcfc20",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
-      "bytes": 182270,
-      "sha256": "9e29a7d4cfa6ffc7a98b02aca427b3d90d5d191eb12dd9bfd89497377daa8fc1",
+      "bytes": 182144,
+      "sha256": "591b1205635526a9df4cddaa761b01c56beb2ac2a611c3f3f8b0c95018557763",
       "url": "https://raw.githubusercontent.com/X4BNet/lists_vpn/main/output/vpn/ipv4.txt"
     }
   }
