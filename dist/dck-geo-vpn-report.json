@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16516,
+    "candidate_ipv4_networks": 16506,
     "candidate_ipv6_networks": 1544,
-    "candidate_raw_networks": 18068,
+    "candidate_raw_networks": 18058,
     "google_protected_networks": 187,
     "iran_ipv4_networks": 1746,
     "iran_ipv6_networks": 571,
@@ -15,21 +15,21 @@
     "public_proxy_networks_observed": 12150,
     "ripe_ir_resource_records": 2540,
     "static_protected_networks": 11,
-    "tor_ipv4_networks": 831,
+    "tor_ipv4_networks": 821,
     "tor_ipv6_networks": 0,
-    "tor_networks_raw": 832,
+    "tor_networks_raw": 822,
     "total_protected_networks": 198,
     "x4bnet_networks": 11003
   },
-  "generated_at": "2026-10-04T18:44:22.315838Z",
+  "generated_at": "2026-10-04T22:25:11.720793Z",
   "google_relay_generated_at": "2026-10-02T22:14:23Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "d9e95ad2b2d10de222bc8a0405324af9154a3a122e306c526b7830cdf27feaca",
     "iran-v6.txt": "9bb64839410795954827bfedc252affbd706b8b2f3d3c1ce8771f51c4228e751",
-    "tor-v4.txt": "c9cf0504cb0a3efe4a22d7ce7e0fbb248ef05b3665fa6a514dee40c64f69666b",
+    "tor-v4.txt": "095787daeda8c008c929958ad869e7016e2653499df15f7bd8095d09d81c0923",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "c2b9e19512fd89719091486746d3ab315585668b5185f9e248c7f276ebdc1ccb",
+    "vpn-proxy-v4.txt": "b0b03438552b902da568890cdcd3dbb15f80c8f40afc18a3920f7996af79788a",
     "vpn-proxy-v6.txt": "88d5bd208a9b669748780bf5b3c7cb234e36495ab5d512940355c44184eb0bd9"
   },
   "policy": {
@@ -129,12 +129,12 @@
     },
     "ripe": {
       "bytes": 8284526,
-      "sha256": "66bf883a8d1c2b10e41558ba34d4323cc72f53920c106f203779b59542356ece",
+      "sha256": "c8a0c70dcce62d28f472a8ac7be4dcd8ea9b2e386caea0eedd0be73ea1409420",
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 19856,
-      "sha256": "d0e043865949cc77c854d07a64fda05f13e928e39371394ea63b25b283ddc4d1",
+      "bytes": 19640,
+      "sha256": "2507add6c036ac5defc62089bd1d12177e49dcb16927e5a8023423be7792b12f",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
