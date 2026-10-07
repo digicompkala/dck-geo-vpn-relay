@@ -21,15 +21,15 @@
     "total_protected_networks": 198,
     "x4bnet_networks": 11200
   },
-  "generated_at": "2026-10-07T01:41:51.969800Z",
+  "generated_at": "2026-10-07T09:00:10.638582Z",
   "google_relay_generated_at": "2026-10-06T18:22:13Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "a469f3257c2f3c56779fd8a37959f7b1c157752e2e087f64ec384d13d5c57265",
     "iran-v6.txt": "9bb64839410795954827bfedc252affbd706b8b2f3d3c1ce8771f51c4228e751",
-    "tor-v4.txt": "f142bf88f2cc019872f67a7350ebc5d1f8d2ae8d162340b2bc9ba0af5af8708b",
+    "tor-v4.txt": "f3c02cdff21409367301131432dcc9e404eeb0613b43b19a6951151fa3b5c46f",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "dafd367286f4f991275a5b29afd4249ef0b039815825855a44e0b2a66f3deeca",
+    "vpn-proxy-v4.txt": "1a9b7ff0bf57fdb472c50feaaf58037293d285d3fbbfebacc46edafda3fbada6",
     "vpn-proxy-v6.txt": "88d5bd208a9b669748780bf5b3c7cb234e36495ab5d512940355c44184eb0bd9"
   },
   "policy": {
@@ -133,8 +133,8 @@
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 18088,
-      "sha256": "9083dde42c2cae6ff94e9337c4ba2af9ad5628c942258a2ed11f897d6c0635f9",
+      "bytes": 18093,
+      "sha256": "fb8179f7a087cfa399472ea1ae52a95eed869df993a2b8fc0cbef5b86e4b0527",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
