@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16483,
+    "candidate_ipv4_networks": 16481,
     "candidate_ipv6_networks": 1544,
-    "candidate_raw_networks": 18035,
+    "candidate_raw_networks": 18033,
     "google_protected_networks": 187,
     "iran_ipv4_networks": 1747,
     "iran_ipv6_networks": 571,
@@ -15,21 +15,21 @@
     "public_proxy_networks_observed": 11694,
     "ripe_ir_resource_records": 2541,
     "static_protected_networks": 11,
-    "tor_ipv4_networks": 673,
+    "tor_ipv4_networks": 671,
     "tor_ipv6_networks": 0,
-    "tor_networks_raw": 674,
+    "tor_networks_raw": 672,
     "total_protected_networks": 198,
     "x4bnet_networks": 11081
   },
-  "generated_at": "2026-10-08T02:08:16.685300Z",
+  "generated_at": "2026-10-08T09:13:53.060295Z",
   "google_relay_generated_at": "2026-10-07T23:05:23Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "a469f3257c2f3c56779fd8a37959f7b1c157752e2e087f64ec384d13d5c57265",
     "iran-v6.txt": "9bb64839410795954827bfedc252affbd706b8b2f3d3c1ce8771f51c4228e751",
-    "tor-v4.txt": "4c93179e1c4205bfb174040cfcfad347e5b1881423707674b29f87f6c53b94c6",
+    "tor-v4.txt": "e530dae2d08861bcb43ca3c78780318651ccffcf7891b75475bb75d3c8caaf44",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "0a0f2fd5ecea51a36aabc98973ac0e66be702d46da7c98c7d7ef0ebe462ecb45",
+    "vpn-proxy-v4.txt": "9e98e23e314ce5080f6c5602fa17527d231c4d8546777cb20a68049a7120c70e",
     "vpn-proxy-v6.txt": "88d5bd208a9b669748780bf5b3c7cb234e36495ab5d512940355c44184eb0bd9"
   },
   "policy": {
@@ -133,8 +133,8 @@
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 17574,
-      "sha256": "03e9d87f4a966bbf64bf2b17b84bf88b11f2de06ea2a8e60064532ff80356d62",
+      "bytes": 17547,
+      "sha256": "45811a51d84c405c288d07f1d55b9d397da6480083b5eb03abdec4ab69552566",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
