@@ -21,8 +21,8 @@
     "total_protected_networks": 198,
     "x4bnet_networks": 11054
   },
-  "generated_at": "2026-10-09T21:05:46.677978Z",
-  "google_relay_generated_at": "2026-10-08T23:21:07Z",
+  "generated_at": "2026-10-10T01:04:34.551416Z",
+  "google_relay_generated_at": "2026-10-09T22:38:30Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "a469f3257c2f3c56779fd8a37959f7b1c157752e2e087f64ec384d13d5c57265",
@@ -57,7 +57,7 @@
   "sources": {
     "google_protection": {
       "bytes": 138840,
-      "sha256": "e75a8097b409ffce3d6a5a942d153c37b386fd198f2b2ba03034509220b49284",
+      "sha256": "b063aba961933b8d48c00a2e5a924f1624fb55e5c255311ef4a06ce4d2ffcd52",
       "url": "https://raw.githubusercontent.com/digicompkala/dck-google-ipranges-relay/main/dist/google-ipranges.json"
     },
     "provider_airvpn": {
@@ -128,8 +128,8 @@
       "warning_signal": false
     },
     "ripe": {
-      "bytes": 8289424,
-      "sha256": "33630567c3f9f67f8ef138c340d22a12b921efa43c30551b640366988edf079b",
+      "bytes": 8290339,
+      "sha256": "8b2d1bb511a14eb992e6a6198d6f206ca6053d6199c4fd14e271463b917e3146",
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
