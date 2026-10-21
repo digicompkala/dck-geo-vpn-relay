@@ -1,12 +1,12 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16476,
+    "candidate_ipv4_networks": 16477,
     "candidate_ipv6_networks": 1548,
     "candidate_raw_networks": 18032,
     "google_protected_networks": 185,
     "iran_ipv4_networks": 1747,
     "iran_ipv6_networks": 574,
-    "iran_subtraction_net_change": 8,
+    "iran_subtraction_net_change": 7,
     "protected_subtraction_net_change": 0,
     "provider_feeds_successful": 10,
     "provider_feeds_total": 10,
@@ -15,21 +15,21 @@
     "public_proxy_networks_observed": 11788,
     "ripe_ir_resource_records": 2544,
     "static_protected_networks": 11,
-    "tor_ipv4_networks": 651,
+    "tor_ipv4_networks": 652,
     "tor_ipv6_networks": 0,
     "tor_networks_raw": 652,
     "total_protected_networks": 196,
     "x4bnet_networks": 11018
   },
-  "generated_at": "2026-10-21T17:27:40.086563Z",
+  "generated_at": "2026-10-21T20:48:48.406726Z",
   "google_relay_generated_at": "2026-10-21T17:12:28Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "a469f3257c2f3c56779fd8a37959f7b1c157752e2e087f64ec384d13d5c57265",
     "iran-v6.txt": "6cf9a89557e63c2017598f1be9385bb91612a93be4dce0cf01246513a9183367",
-    "tor-v4.txt": "aaf9852b23f1c50d7f1738d6692e5b71c39643a2e328a7c414c9c5a537d8a1bd",
+    "tor-v4.txt": "86a9786a3e773791738d54b7e0783814029fe32c3c89cccdd998afd88bd332c4",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "48ea51ab821f1b7501c84e5f4e730a66922504837b66b8b63b84a17106c270cd",
+    "vpn-proxy-v4.txt": "cc7289cc41d99792de289461ea3e46bc26581d03c4afc85233a4fae6861df9de",
     "vpn-proxy-v6.txt": "6e6d063a53271e0c001defff5bad689268a17e3f31228347044171b20d738b19"
   },
   "policy": {
@@ -133,8 +133,8 @@
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 17292,
-      "sha256": "f830bf29154bc2eae72c6942152e458de3897c5d3a1361781917428080c48867",
+      "bytes": 17308,
+      "sha256": "00265e62b706e4c462ff96892fd245231dda5ded0ad72889ab8003fac5f926bb",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
