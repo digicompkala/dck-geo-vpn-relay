@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16373,
+    "candidate_ipv4_networks": 16362,
     "candidate_ipv6_networks": 1548,
-    "candidate_raw_networks": 17928,
+    "candidate_raw_networks": 17917,
     "google_protected_networks": 185,
     "iran_ipv4_networks": 1747,
     "iran_ipv6_networks": 574,
@@ -19,17 +19,17 @@
     "tor_ipv6_networks": 0,
     "tor_networks_raw": 643,
     "total_protected_networks": 196,
-    "x4bnet_networks": 10942
+    "x4bnet_networks": 10931
   },
-  "generated_at": "2026-10-24T11:22:30.065116Z",
+  "generated_at": "2026-10-24T14:43:06.509358Z",
   "google_relay_generated_at": "2026-10-23T17:07:17Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "a469f3257c2f3c56779fd8a37959f7b1c157752e2e087f64ec384d13d5c57265",
     "iran-v6.txt": "6cf9a89557e63c2017598f1be9385bb91612a93be4dce0cf01246513a9183367",
-    "tor-v4.txt": "ea741b955dc9875caf5679bd59c402852ee508fc3b98ddced8f34a6dfda8609c",
+    "tor-v4.txt": "db1494f9db10cab056752ed07c96e7dbe0390df836e87fde91501ea563f7286b",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "62c0cb9d0b9df8911a81f60813004d14ffdc27bbbc8a8dc3cfa9c01b892b830b",
+    "vpn-proxy-v4.txt": "bc08ec055a434a4d05d715eaa2b93a7cd4c0d00db767977a139328fe4a9ffebf",
     "vpn-proxy-v6.txt": "6e6d063a53271e0c001defff5bad689268a17e3f31228347044171b20d738b19"
   },
   "policy": {
@@ -133,13 +133,13 @@
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 17230,
-      "sha256": "214d9c2a2e29ec285c5b6501f3098698a2d574e92d1547504758193ad9105674",
+      "bytes": 17217,
+      "sha256": "1adf3fe8a3f96fc29a4e611d1674758d4336d6f4a092610a51c38029d864e233",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
-      "bytes": 179586,
-      "sha256": "7280997f436f7c43acd889643418cd1e85c1c691f881d1f34f09f731412f4d69",
+      "bytes": 179405,
+      "sha256": "d5555f06a151141d08d79bbbcb96150f979860b48d8bfd66515ffa4d3fcc4ef7",
       "url": "https://raw.githubusercontent.com/X4BNet/lists_vpn/main/output/vpn/ipv4.txt"
     }
   }
