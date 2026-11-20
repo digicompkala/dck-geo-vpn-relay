@@ -1,8 +1,8 @@
 {
   "counts": {
-    "candidate_ipv4_networks": 16365,
+    "candidate_ipv4_networks": 16374,
     "candidate_ipv6_networks": 1554,
-    "candidate_raw_networks": 17926,
+    "candidate_raw_networks": 17935,
     "google_protected_networks": 185,
     "iran_ipv4_networks": 1749,
     "iran_ipv6_networks": 578,
@@ -12,24 +12,24 @@
     "provider_feeds_total": 10,
     "provider_vpn_networks": 13472,
     "public_proxy_feed_successful": true,
-    "public_proxy_networks_observed": 10615,
+    "public_proxy_networks_observed": 10878,
     "ripe_ir_resource_records": 2551,
     "static_protected_networks": 11,
-    "tor_ipv4_networks": 728,
+    "tor_ipv4_networks": 727,
     "tor_ipv6_networks": 0,
-    "tor_networks_raw": 729,
+    "tor_networks_raw": 728,
     "total_protected_networks": 196,
-    "x4bnet_networks": 11060
+    "x4bnet_networks": 11070
   },
-  "generated_at": "2026-11-20T13:21:12.245964Z",
-  "google_relay_generated_at": "2026-11-19T20:37:08Z",
+  "generated_at": "2026-11-20T21:23:22.647423Z",
+  "google_relay_generated_at": "2026-11-20T20:19:21Z",
   "optional_source_failures": [],
   "output_sha256": {
     "iran-v4.txt": "33c2fb152fe7f7ee0b3efb0299dbbdbf281fe845f8bbc637cfa21d3cc37e687b",
     "iran-v6.txt": "72cf50128682699498b28389af10ec2b793ca259ce4d4a38650e995c7b1278f4",
-    "tor-v4.txt": "67c6de77346b4ebbfabe90e733a31d26ac5a2ad601bd469dd12c6a4fb76ae876",
+    "tor-v4.txt": "c4c86d517366220e816dbe202f7500875f59a637728f9fd893f1ebbeb47392f9",
     "tor-v6.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "vpn-proxy-v4.txt": "8bb1a4442c5c6da7114d57d0a1db0c95d89ffacb08e8db42e52e64f0dac09322",
+    "vpn-proxy-v4.txt": "568f1deacbed4263ea012bd121820488fbbe72f92fb146bf6328580d59846a9f",
     "vpn-proxy-v6.txt": "d4806187703d92a4218ed0411db1cdcc4c09f22e9e2347ec82ae950f066df6e4"
   },
   "policy": {
@@ -57,7 +57,7 @@
   "sources": {
     "google_protection": {
       "bytes": 139106,
-      "sha256": "14f240db7d88588d144ef0faefb9af19b47efcbef80b0abf949c910991236e52",
+      "sha256": "adbdba439755ff4fc30ff5a9bb2a9fe7d4bb1c22201a1512e79bce3e5d4608a7",
       "url": "https://raw.githubusercontent.com/digicompkala/dck-google-ipranges-relay/main/dist/google-ipranges.json"
     },
     "provider_airvpn": {
@@ -121,9 +121,9 @@
       "url": "https://raw.githubusercontent.com/Joe12387/open-source-vpn-ip-lists/master/windscribe.txt"
     },
     "proxio": {
-      "bytes": 234067,
-      "networks": 10615,
-      "sha256": "02eb6153f87c2fbe5d277731bbd1d528b42394f8b819bee198d4d061c97d10c3",
+      "bytes": 240164,
+      "networks": 10878,
+      "sha256": "6f4b8202d6f72643147297109c9bce701a26e5f2dd02ab9794ce0c2ab905d658",
       "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
       "warning_signal": false
     },
@@ -133,13 +133,13 @@
       "url": "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
     },
     "tor": {
-      "bytes": 18427,
-      "sha256": "cd9cb1f2d5b201685d51c05e56aeb4e1c27bbb81f24432b7d8959609b3038885",
+      "bytes": 18495,
+      "sha256": "a70d75dba4b585fbd527b041591fd5bf1e0c8eb18433d816c6a6f4a3d48ba704",
       "url": "https://check.torproject.org/torbulkexitlist"
     },
     "x4bnet": {
-      "bytes": 181213,
-      "sha256": "22a9d9c92b08f720bfb7896bf56b9d57791b8a4e2a18ae39e04104c49c782ec0",
+      "bytes": 181439,
+      "sha256": "44d16cb47fd6ed1a94ef507da8b48ca1adacd27bc07fb6a33fa869e87cf08120",
       "url": "https://raw.githubusercontent.com/X4BNet/lists_vpn/main/output/vpn/ipv4.txt"
     }
   }
